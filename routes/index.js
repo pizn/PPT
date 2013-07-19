@@ -1,7 +1,9 @@
+/**
+ *  定义 socket 的端口号，处理广播
+ */
 var io = require('socket.io').listen(3001);
 io.sockets.on('connection', function (socket) {
     socket.on('message', function(data) {
-        console.log('Message Received:', data);
         socket.broadcast.emit('message', data);
     });
 });
@@ -11,5 +13,5 @@ io.sockets.on('connection', function (socket) {
  */
 
 exports.index = function(req, res){
-  res.redirect('/index.html');
+  res.redirect('/show.html');
 };
