@@ -1,0 +1,15 @@
+#slides {
+  position: absolute;
+  font-size: 45px;
+  bottom: 20px;
+  left: 20px;
+  color: red;
+}
+
+#time {
+  position: absolute;
+  font-size: 45px;
+  bottom: 20px;
+  left: 160px;
+  color: red;
+}

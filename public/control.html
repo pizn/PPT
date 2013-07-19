@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Control</title>
+</head>
+<body>
+<input type="text" id="J-input" value="" />
+<a href="#" id="J-submit">hello</a>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/socket.io.min.js"></script>
+<script type="text/javascript">
+    var socket = io.connect('http://localhost:3001');
+    console.log(socket);
+    $("#J-submit").click(function(e) {
+        e.preventDefault();
+        var inputVal = $("#J-input").val();
+        socket.send(inputVal);
+    });
+</script>
+</body>
+</html>
