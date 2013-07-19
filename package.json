@@ -1,0 +1,18 @@
+{
+    "name": "PPT",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "3.2.0",
+        "jade": "*",
+        "socket.io": "*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:pizn/PPT.git"
+    },
+    "author": "zhanxin.lin <zhanxin.info@gmail.com>"
+}
